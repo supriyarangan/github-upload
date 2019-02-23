@@ -1,0 +1,83 @@
+-- PATENTS VIEW DATA SET (MEDICARE INPATIENT CHARGES OF 2011)
+##Query 1
+SELECT * 
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+LIMIT 1000
+##Output 1
+https://docs.google.com/spreadsheets/d/11wZ8nGpQDVUMhY_yAD3eODY5ZxpuZjZR48R3ZHy19n0/edit?usp=sharing
+
+##Query 2
+SELECT *
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+ORDER BY average_covered_charges DESC
+LIMIT 10
+##Output 2
+https://docs.google.com/spreadsheets/d/1uHSaXmuW4kEIKTiCdcrtCoHhfpzttduab4yxjqSzp9o/edit#gid=441326485
+
+##Query 3
+SELECT * 
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+WHERE provider_name = "STANFORD HOSPITAL"
+##OUTPUT 3
+https://docs.google.com/spreadsheets/d/1x1osR6wWLBSaD0e81-9tqJKmnAse6RyDK30EHxgMqNc/edit?usp=sharing
+
+##Query 4
+SELECT * 
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+WHERE provider_name = "STANFORD HOSPITAL"
+ORDER BY average_covered_charges DESC
+Limit 10
+##OUTPUT 4
+https://docs.google.com/spreadsheets/d/1Pj-e-8TYSafPCfVUa0Lwxt7karIvFzNZIEKeDWfCPTI/edit?usp=sharing
+
+##Query 5
+SELECT * 
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+ORDER BY total_discharges DESC
+Limit 100
+##OUTPUT 5
+https://docs.google.com/spreadsheets/d/1J1Th-61j3ZdLthUQXm6fyAOF6B-B99YljtO8LWIcAgM/edit?usp=sharing
+
+##Query 6
+SELECT * 
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+Order by average_medicare_payments DESC
+Limit 100
+##OUTPUT 6
+https://docs.google.com/spreadsheets/d/1x8IS4UDvW94FhyS9BB2xL39WNIuGzEeEIlNjgbB152M/edit?usp=sharing
+
+##Query 7
+SELECT * 
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+Where provider_state = "CA"
+Order by average_medicare_payments DESC
+Limit 100
+##OUTPUT 7
+https://docs.google.com/spreadsheets/d/1OW2cXf5SOVQB_JGBgZWBVy44F38-cc7fPXw9-gbg_W8/edit?usp=sharing
+
+##Query 8
+SELECT * 
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+Where provider_id = 50441
+Order by average_medicare_payments DESC
+Limit 100
+##OUTPUT 8
+https://docs.google.com/spreadsheets/d/1PDP1-FBTtodOfagA-ZE4CFLmxq_ER37-GLIMtcpd6wM/edit?usp=sharing
+
+##Query 9
+SELECT * 
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+Where provider_id = 50441
+Order by average_total_payments DESC
+Limit 100
+##OUPUT 9
+https://docs.google.com/spreadsheets/d/1KLfLz1He6qZKuZt98P9cleOCKETwP6B9VuI6d3bKAsI/edit?usp=sharing
+
+##Query 10
+SELECT *
+FROM `bigquery-public-data.medicare.inpatient_charges_2011` 
+where provider_zipcode = 46307
+Order by average_total_payments DESC
+Limit 100
+##OUTPUT 10
+https://docs.google.com/spreadsheets/d/136FOTLnKcRY-_HO2Z2b3h_vc7jgYuIhpCWHZ6VnBeo8/edit?usp=sharing
